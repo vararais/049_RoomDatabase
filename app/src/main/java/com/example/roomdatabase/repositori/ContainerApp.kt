@@ -5,6 +5,7 @@ import android.content.Context
 import com.example.roomdatabase.room.DatabaseSiswa
 
 interface ContainerApp {
+    val repositorisiswa: RepositoriSiswa
     val repositoriSiswa : RepositoriSiswa
 }
 
