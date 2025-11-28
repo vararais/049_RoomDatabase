@@ -8,7 +8,7 @@ import java.time.Instant
 
 @Database(entities = [Siswa::class], version = 1, exportSchema = false)
 abstract class DatabaseSiswa : RoomDatabase(){
-    abstract fun SiswaDao() : SiswaDao
+    abstract fun siswaDao() : SiswaDao
 
     companion object {
         @Volatile
