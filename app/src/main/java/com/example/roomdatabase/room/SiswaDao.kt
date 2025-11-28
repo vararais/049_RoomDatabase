@@ -5,5 +5,6 @@ import androidx.room.Query
 
 @Dao
 interface SiswaDao {
-    @Query
+    @Query("SELECT * from tblSiswa ORDER BY nama ASC")
+
 }
