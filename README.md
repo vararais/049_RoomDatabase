@@ -6,3 +6,8 @@ TAMPILAN DETAIL ITEM : <img width="1920" height="1080" alt="Screenshot 2025-12-0
 
 TAMPILAN VALIDASI HAPUS : <img width="1920" height="1080" alt="Screenshot 2025-12-05 164455" src="https://github.com/user-attachments/assets/ecb1b9c1-e6db-4488-aca8-b0471ca10b85" />
 
+TAMPILAN EDIT : <img width="1920" height="1020" alt="Screenshot 2025-12-05 191607" src="https://github.com/user-attachments/assets/495061de-cc83-4317-9895-f66bf871381d" />
+
+TAMPILAN UPDATE :<img width="1920" height="1080" alt="Screenshot 2025-12-05 191418" src="https://github.com/user-attachments/assets/a39daddf-da94-46bd-8b97-1e5e903b2346" />
+
+TAMPILAN HOME SETELAH DIEDIT DAN UPDATE :<img width="1920" height="1080" alt="Screenshot 2025-12-05 191429" src="https://github.com/user-attachments/assets/abc09c48-5df7-4835-9f5d-bd0201dfed0e" />
