@@ -4,18 +4,27 @@ import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.createSavedStateHandle
 import com.example.roomdatabase.repositori.AplikasiSiswa
+import com.example.roomdatabase.viewmodel.DetailViewModel
 import com.example.roomdatabase.viewmodel.EntryViewModel
 import com.example.roomdatabase.viewmodel.HomeViewModel
 
 object PenyediaViewModel {
     val Factory = viewModelFactory {
         initializer {
-            HomeViewModel(aplikasiSiswa().container.repositorisiswa)
+            HomeViewModel(aplikasiSiswa().container.repositoriSiswa)
         }
 
         initializer {
-            EntryViewModel(aplikasiSiswa().container.repositorisiswa)
+            EntryViewModel(aplikasiSiswa().container.repositoriSiswa)
+        }
+
+        initializer {
+            DetailViewModel(
+                savedStateHandle = this.createSavedStateHandle(),
+                repositoriSiswa = aplikasiSiswa().container.repositoriSiswa
+            )
         }
     }
 }

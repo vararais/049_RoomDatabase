@@ -5,15 +5,14 @@ import android.content.Context
 import com.example.roomdatabase.room.DatabaseSiswa
 
 interface ContainerApp {
-    val repositorisiswa: RepositoriSiswa
+    val repositoriSiswa: RepositoriSiswa
 }
 
 class ContainerDataApp(private val context: Context):
-    ContainerApp {
-    override val repositorisiswa: RepositoriSiswa by lazy {
+    ContainerApp{
+    override val repositoriSiswa: RepositoriSiswa by lazy {
         OfflineRepositorisiswa(
-            DatabaseSiswa.getDatabase(context).siswaDao()
-        )
+            DatabaseSiswa.getDatabase(context).siswaDao())
     }
 }
 
