@@ -38,6 +38,19 @@ fun DetailSiswaScreen(
                     contentDescription = stringResource(R.string.update),
                 )
             }
-
-
-        }
+        }, modifier = modifier
+    ) { innerPadding ->
+        val uiState = viewModel.uiDetailState.collectAsState()
+        val coroutineScope = rememberCoroutineScope()
+        BodyDetailDataSiswa(
+            detailSiswaUiState = uiState.value,
+            onDelete = { coroutineScope.launch {
+                viewModel.deleteSiswa()
+                navigateBack()
+            }},
+            modifier = Modifier
+                .padding(innerPadding)
+                .verticalScroll(rememberScrollState())
+        )
+    }
+}
