@@ -1,4 +1,12 @@
 package com.example.roomdatabase.viewmodel
 
-class DetailViewModel {
-}
+import androidx.lifecycle.SavedStateHandle
+import androidx.lifecycle.ViewModel
+import com.example.roomdatabase.repositori.RepositoriSiswa
+import com.example.roomdatabase.view.route.DestinasiDetailSiswa
+
+class DetailViewModel (
+    savedStateHandle: SavedStateHandle,
+    private val repositoriSiswa: RepositoriSiswa) : ViewModel(){
+
+    private val idSiswa: Int = checkNotNull(savedStateHandle[DestinasiDetailSiswa.itemIdArg])
