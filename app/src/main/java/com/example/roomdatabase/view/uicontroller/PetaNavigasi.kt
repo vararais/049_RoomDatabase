@@ -47,6 +47,7 @@ fun HostNavigasi(
             })
         ){
             DetailSiswaScreen(
+                //navigateToEditItem = { navController.navigate("${DestinasiEntry.route}/$it") },
                 navigateBack = { navController.navigateUp() })
         }
     }
